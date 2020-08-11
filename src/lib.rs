@@ -47,18 +47,15 @@ impl<T: Debug> RingVec<T> {
     pub fn pop(&mut self) -> Option<T> {
         if self.len > 0 {
             let start = self.start;
-            println!("before pop: {:?}", self);
             self.start = (self.start + 1) % self.capacity;
             self.len -= 1;
             let ret = self.inner[start].take();
-            println!("after pop: {:?}", self);
             ret
         } else { None }
     }
 
     /// Appends an item if there is space.
     pub fn push(&mut self, item: T) -> Result<(), T> {
-        println!("before push: {:?}", self);
         if self.len < self.capacity {
             let end = self.start + self.len;
             if end >= self.inner.capacity() {
