@@ -1,9 +1,9 @@
 [package]
 name = "ring-vec"
-version = "0.1.0"
-description = "A zero-dependency, producer-consumer, fixed-size, item-oriented ring buffer backed by a vector."
+version = "0.1.1"
+description = "A zero-dependency, no-std compatible, producer-consumer, fixed-size, item-oriented ring buffer backed by a vector."
 keywords = ["ring", "buffer", "queue", "vector"]
-categories = ["data-structures"]
+categories = ["data-structures", "no-std"]
 authors = ["James Laver <james.laver@gmail.com>"]
 homepage = "https://github.com/irrustible/ring-vec"
 repository = "https://github.com/irrustible/ring-vec"

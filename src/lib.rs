@@ -1,5 +1,9 @@
-use std::cmp::min;
-use std::fmt::Debug;
+#![no_std]
+extern crate alloc;
+use alloc::vec::Vec;
+
+use core::cmp::min;
+use core::fmt::Debug;
 
 // It's basically a queue with a maximum capacity that wraps around in
 // the internal storage.

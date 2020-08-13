@@ -4,6 +4,10 @@
 [![Package](https://img.shields.io/crates/v/ring-vec.svg)](https://crates.io/crates/ring-vec)
 [![Documentation](https://docs.rs/ring-vec/badge.svg)](https://docs.rs/ring-vec)
 
+A zero-dependency, no-std compatible, producer-consumer, fixed-size, item-oriented ring buffer backed by a vector.
+
+Requires `alloc`, for the vector.
+
 ## Status
 
 Brand new, with basic tests, seems to work.
